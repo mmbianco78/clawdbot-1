@@ -10,6 +10,15 @@ Use the voice-call plugin to start or inspect calls (Twilio, Telnyx, Plivo, or m
 
 ## CLI
 
+### Reliable Wrapper (Recommended)
+```bash
+# Use this - has fallback and state management
+~/code/critical-brain/skills/voice-call/reliable-call.sh call "+15555550123" "Hello"
+~/code/critical-brain/skills/voice-call/reliable-call.sh status
+~/code/critical-brain/skills/voice-call/reliable-call.sh cleanup
+```
+
+### Direct Plugin (May get stuck)
 ```bash
 clawdbot voicecall call --to "+15555550123" --message "Hello from Clawdbot"
 clawdbot voicecall status --call-id <id>
