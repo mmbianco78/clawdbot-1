@@ -17,7 +17,7 @@ This repository has been migrated from **Clawdbot** to **OpenClaw** (February 20
 - **Config:** `~/.openclaw/openclaw.json`
 - **Gateway:** Running via LaunchAgent (`ai.openclaw.gateway`)
 - **Workspace:** `/Users/marcobianco/code/critical-brain`
-- **Skills:** 77 active (54 from workspace + ~40 bundled)
+- **Skills:** 79 active (56 from workspace + ~40 bundled)
 
 ### Development (MacBook Pro)
 - **Purpose:** Development and testing
@@ -181,6 +181,8 @@ All API keys are stored in `env.vars`:
 - `RUNWAYML_API_KEY` / `RUNWAY_API_KEY`
 - `HIGGSFIELD_KEY_ID` / `HIGGSFIELD_KEY_SECRET`
 - `FAL_KEY_ID` / `FAL_KEY_SECRET`
+- `CELLCOG_API_KEY`
+- `ELEVENLABS_API_KEY`
 
 ---
 
@@ -210,10 +212,10 @@ All API keys are stored in `env.vars`:
 
 ### Skill Locations
 1. **Bundled:** ~40 skills (built into OpenClaw)
-2. **Workspace:** 54 skills (`~/code/critical-brain/skills/`)
+2. **Workspace:** 56 skills (`~/code/critical-brain/skills/`)
 3. **Runtime:** Custom additions (`~/.openclaw/skills/soundcore-sync`)
 
-### Active Skills (77/100 ready)
+### Active Skills (79/101 ready)
 **Key skills with API keys:**
 - `agent-browser` - Browser automation
 - `todoist` - Task management
@@ -222,6 +224,10 @@ All API keys are stored in `env.vars`:
 - `openai-image-gen` - Image generation
 - `openai-whisper-api` - Speech transcription
 - `runway` / `veo2` / `ai-video-gen` - Video generation
+- `cellcog` - #1 DeepResearch Bench, any-to-any AI (multi-modal inputs/outputs)
+
+**Automation & workflows:**
+- `n8n-workflow-automation` - Generate n8n workflows with error handling, retries, logging
 
 **System integration:**
 - `apple-notes` - Apple Notes management

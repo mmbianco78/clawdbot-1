@@ -64,7 +64,7 @@ openclaw security audit --fix
 | **Config** | `~/.openclaw/openclaw.json` |
 | **Gateway logs** | `~/.openclaw/logs/gateway.log` |
 | **Session logs** | `~/.openclaw/agents/main/sessions/` |
-| **Skills (workspace)** | `~/code/critical-brain/skills/` (54 skills) |
+| **Skills (workspace)** | `~/code/critical-brain/skills/` (56 skills) |
 | **Skills (runtime)** | `~/.openclaw/skills/` (soundcore-sync) |
 | **Credentials** | `~/.openclaw/credentials/` |
 | **Code repo** | `~/clawdbot/` |
